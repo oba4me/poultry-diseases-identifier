@@ -13,11 +13,11 @@ with st.spinner('Model is being loaded..'):
   model=load_model()
 
 
-st.markdown("<h1 style='text-align: center; color: white;'>Fecal Chicken Disease Diagnostics🐣🐓💩</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: white;'>Poultry Diseases Diagnostics🐣🐓💩 App</h1>", unsafe_allow_html=True)
 
 st.title('')
  
-file = st.file_uploader("You can check your chicken's health via fecal matter. This app helps to detect unhealthy diseases such as Coccidiosis, Salmonella, and Newcastle from image files of chicken feces.", type=["jpg", "png", "jpeg"])
+file = st.file_uploader("You can check your poultry bird's health via Poultry Disease Identifier. This app helps to detect unhealthy diseases such as Coccidiosis, Salmonella, and Newcastle from image files of chicken feces.", type=["jpg", "png", "jpeg"])
 st.set_option('deprecation.showfileUploaderEncoding', False)
  
 def upload_predict(upload_image, model):
@@ -33,7 +33,7 @@ def upload_predict(upload_image, model):
         pred_class=[j for j in classes if classes[j] == np.argmax(score)][0]
         return pred_class, round(100 * np.max(score),2)
 if file is None:
-    st.text("Please upload an your fecal chicken image file")
+    st.text("Please upload an your Poultry Chicken Image File")
 else:
     image = Image.open(file)
     st.image(image, use_column_width=True)
