@@ -14,9 +14,8 @@ with st.spinner('Model is being loaded..'):
 
 
 st.markdown("<h1 style='text-align: center; color: red;'>Poultry Diseases Diagnostics🐣🐓💩 App</h1>", unsafe_allow_html=True)
+st.title('')
 
-st.title('Identification and Classification of Poultry Diseases')
-st.title('By <br>OMIDEYI, Damilare<br> A18/27/PCS007')
 file = st.file_uploader("You can check your poultry bird's health via Poultry Disease Identifier. This app helps to detect unhealthy diseases such as Coccidiosis, Salmonella, and Newcastle from image files of chicken feces.", type=["jpg", "png", "jpeg"])
 st.set_option('deprecation.showfileUploaderEncoding', False)
  
@@ -41,3 +40,6 @@ else:
     st.write("🐥The image is classified as",image_class)
     st.write("🐔The similarity score is approximately",score_preds)
     print("The image is classified as ",image_class, "with a similarity score of",score_preds)
+
+st.text("<h3 style='text-align: center; color: yellow;'>Identification and Classification of Poultry Diseases</h3>", unsafe_allow_html=True)
+st.text("<h3 style='text-align: center; color: Green;'>By OMIDEYI, Damilare A18/27/PCS007</h3>", unsafe_allow_html=True)
