@@ -15,8 +15,8 @@ with st.spinner('Model is being loaded..'):
 
 st.markdown("<h1 style='text-align: center; color: red;'>Poultry Diseases Diagnostics🐣🐓💩 App</h1>", unsafe_allow_html=True)
 
-st.title('An image based mobile system for Identification and classification of Poultry diseases using machine learning By OMIDEYI, Damilare A18/27/PCS007')
- 
+st.title('Identification and Classification of Poultry Diseases')
+st.title('By <br>OMIDEYI, Damilare<br> A18/27/PCS007')
 file = st.file_uploader("You can check your poultry bird's health via Poultry Disease Identifier. This app helps to detect unhealthy diseases such as Coccidiosis, Salmonella, and Newcastle from image files of chicken feces.", type=["jpg", "png", "jpeg"])
 st.set_option('deprecation.showfileUploaderEncoding', False)
  
