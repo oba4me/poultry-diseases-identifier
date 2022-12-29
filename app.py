@@ -42,5 +42,5 @@ else:
     print("The image is classified as ",image_class, "with a similarity score of",score_preds)
 
 st.markdown("<h3 style='text-align: center; color: Green;'>Identification and Classification of Poultry Diseases</h3>", unsafe_allow_html=True)
-st.markdown("<h3 style='text-align: center; color: Green;'>By OMIDEYI, Damilare A18/27/PCS007</h3>", unsafe_allow_html=True)
-st.markdown("<h3 style='text-align: center; color: Green;'>A18/27/PCS007</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center; color: Green;'>By OMIDEYI, Damilare.A</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center; color: Green;'>18/27/PCS007</h3>", unsafe_allow_html=True)
