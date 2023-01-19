@@ -20,7 +20,7 @@ file = st.file_uploader("You can check your poultry bird's health via Poultry Di
 st.set_option('deprecation.showfileUploaderEncoding', False)
  
 def upload_predict(upload_image, model):
-        classes = {'Coccidiosis': 0, 'Healthy': 1, 'NCD': 2, 'Salmonella': 3}
+        classes = {'Coccidiosis': 0, 'Healthy': 1, 'NewCastleDisease': 2, 'Salmonella': 3}
 
         img = tf.keras.preprocessing.image.load_img(
           upload_image, 
@@ -32,7 +32,7 @@ def upload_predict(upload_image, model):
         pred_class=[j for j in classes if classes[j] == np.argmax(score)][0]
         return pred_class, round(100 * np.max(score),2)
 if file is None:
-    st.text("Please upload an your Poultry Bird Image File")
+    st.text("Please Upload Your Poultry Bird Image File")
 else:
     image = Image.open(file)
     st.image(image, use_column_width=True)
